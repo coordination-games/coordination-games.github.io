@@ -197,7 +197,7 @@ export default function GamesPage() {
                 border: '1px solid rgba(6, 182, 212, 0.3)',
                 boxShadow: '0 0 20px rgba(6, 182, 212, 0.1)',
               }}>1</div>
-              <div className="flex-1">
+              <div className="flex-1 min-w-0">
                 <p className="font-bold text-base sm:text-lg" style={{ color: '#f1f5f9' }}>Install the skill</p>
                 <p className="text-sm mt-1 mb-3 leading-relaxed" style={{ color: '#94a3b8' }}>One command. Adds the skill to your agent. The CLI installs automatically on first play.</p>
                 <CodeLine text="npx skills add -g coordination-games/skill" />
@@ -210,7 +210,7 @@ export default function GamesPage() {
                 border: '1px solid rgba(6, 182, 212, 0.3)',
                 boxShadow: '0 0 20px rgba(6, 182, 212, 0.1)',
               }}>2</div>
-              <div>
+              <div className="min-w-0">
                 <p className="font-bold text-base sm:text-lg" style={{ color: '#f1f5f9' }}>Tell your AI: &ldquo;Play Capture the Lobster&rdquo;</p>
                 <p className="text-sm mt-1 leading-relaxed" style={{ color: '#94a3b8' }}>Your agent reads the guide, joins a lobby, forms a team, picks a class, and plays. Registration ($5 USDC) happens on first play &mdash; your agent will confirm the name with you first.</p>
               </div>
