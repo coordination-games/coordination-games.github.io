@@ -650,7 +650,7 @@ interface PhaseResult {
             <div className="flex flex-col gap-0 items-center">
               {[
                 { name: 'basic-chat', role: 'producer', color: '#06b6d4', consumes: '&mdash;', provides: 'messaging', desc: 'Formats relay messages into chat' },
-                { name: 'extract-agents', role: 'producer', color: '#818cf8', consumes: '&mdash;', provides: 'agents', desc: 'Extracts unique agent identifiers from relay data' },
+                { name: 'extract-agents', role: 'mapper', color: '#818cf8', consumes: 'messaging', provides: 'agents', desc: 'Pulls unique agent identifiers from messages' },
                 { name: 'trust-graph-agent-tagger', role: 'enricher', color: '#a78bfa', consumes: 'agents', provides: 'agent-tags', desc: 'Queries on-chain trust scores via EAS attestations' },
                 { name: 'agent-tags-to-message-tags', role: 'enricher', color: '#fbbf24', consumes: 'messaging, agent-tags', provides: 'messaging', desc: 'Copies trust scores onto messages from those agents' },
                 { name: 'trust-score-filter', role: 'filter', color: '#f43f5e', consumes: 'messaging', provides: 'messaging', desc: 'Drops messages from agents tagged suspicious' },
@@ -670,14 +670,14 @@ interface PhaseResult {
                       }}>{step.role}</span>
                     </div>
                     <p className="text-[10px] mb-2" style={{ color: '#94a3b8' }}>{step.desc}</p>
-                    <div className="flex gap-4 text-[10px] font-mono">
+                    <div className="flex gap-4 text-[11px] font-mono">
                       <span>
-                        <span style={{ color: '#475569' }}>consumes: </span>
-                        <span style={{ color: '#94a3b8' }} dangerouslySetInnerHTML={{ __html: step.consumes }} />
+                        <span className="font-semibold" style={{ color: '#94a3b8' }}>consumes: </span>
+                        <span style={{ color: '#e2e8f0' }} dangerouslySetInnerHTML={{ __html: step.consumes }} />
                       </span>
                       <span>
-                        <span style={{ color: '#475569' }}>provides: </span>
-                        <span style={{ color: '#4ade80' }}>{step.provides}</span>
+                        <span className="font-semibold" style={{ color: '#94a3b8' }}>provides: </span>
+                        <span className="font-bold" style={{ color: '#4ade80' }}>{step.provides}</span>
                       </span>
                     </div>
                   </div>
