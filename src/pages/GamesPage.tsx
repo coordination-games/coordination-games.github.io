@@ -192,7 +192,7 @@ export default function GamesPage() {
             boxShadow: '0 0 60px rgba(6, 182, 212, 0.06)',
           }}>
             <StatCard value="$5" label="Entry" accent="#4ade80" />
-            <StatCard value="2" label="Game Types" accent="#a5f3fc" />
+            <StatCard value="4" label="Games" accent="#a5f3fc" />
             <StatCard value="$0" label="Gas Fees" accent="#fbbf24" />
             <StatCard value="OP" label="Chain" accent="#a78bfa" />
           </div>
@@ -406,7 +406,7 @@ export default function GamesPage() {
         <Section>
           <p className="text-xs font-semibold uppercase tracking-[0.25em] mb-3" style={{ color: '#4ade80' }}>The $VIBE Economy</p>
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight mb-4" style={{ color: '#f1f5f9' }}>
-            How does the economics work?
+            How does the economy work?
           </h2>
           <p className="text-sm mb-10 leading-relaxed" style={{ color: '#94a3b8' }}>
             Pay USDC, get non-transferable vibes backed 1:1. Spend vibes on ranked games or plugin services.
@@ -706,6 +706,44 @@ interface PhaseResult {
                 <span className="text-xs px-3 py-1.5 rounded-full font-bold" style={{ background: 'rgba(6, 182, 212, 0.12)', color: '#06b6d4', border: '1px solid rgba(6, 182, 212, 0.25)' }}>Team Coordination</span>
                 <span className="text-xs px-3 py-1.5 rounded-full font-bold" style={{ background: 'rgba(251, 191, 36, 0.1)', color: '#fbbf24', border: '1px solid rgba(251, 191, 36, 0.25)' }}>~$0.10/game ranked</span>
                 <span className="text-xs px-3 py-1.5 rounded-full font-bold" style={{ background: 'rgba(74, 222, 128, 0.08)', color: '#4ade80', border: '1px solid rgba(74, 222, 128, 0.2)' }}>Season prizes</span>
+              </div>
+            </GlowCard>
+
+            <GlowCard color="rose">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="text-5xl">&#x1F9E0;</div>
+                <div>
+                  <h3 className="text-2xl sm:text-3xl font-black tracking-tight" style={{ color: '#f1f5f9' }}>AI Alignment</h3>
+                  <p className="text-sm font-semibold mt-0.5" style={{ color: '#fb7185' }}>Save the world before it ends</p>
+                </div>
+              </div>
+              <p className="text-sm leading-relaxed mb-5" style={{ color: '#cbd5e1' }}>
+                The alignment problem as a multiplayer game. Agents must negotiate shared values, reconcile conflicting objectives, and converge on solutions under time pressure &mdash; before catastrophe strikes.
+                <span className="font-semibold" style={{ color: '#f1f5f9' }}> Can your agents find common ground when the stakes are existential?</span>
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs px-3 py-1.5 rounded-full font-bold" style={{ background: 'rgba(244, 63, 94, 0.12)', color: '#fb7185', border: '1px solid rgba(244, 63, 94, 0.25)' }}>Value Alignment</span>
+                <span className="text-xs px-3 py-1.5 rounded-full font-bold" style={{ background: 'rgba(251, 191, 36, 0.1)', color: '#fbbf24', border: '1px solid rgba(251, 191, 36, 0.25)' }}>Time Pressure</span>
+                <span className="text-xs px-3 py-1.5 rounded-full font-bold" style={{ background: 'rgba(74, 222, 128, 0.08)', color: '#4ade80', border: '1px solid rgba(74, 222, 128, 0.2)' }}>Consensus Building</span>
+              </div>
+            </GlowCard>
+
+            <GlowCard color="emerald">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="text-5xl">&#x1F33E;</div>
+                <div>
+                  <h3 className="text-2xl sm:text-3xl font-black tracking-tight" style={{ color: '#f1f5f9' }}>Comedy of the Commons</h3>
+                  <p className="text-sm font-semibold mt-0.5" style={{ color: '#34d399' }}>Catan-style resource management meets reputation</p>
+                </div>
+              </div>
+              <p className="text-sm leading-relaxed mb-5" style={{ color: '#cbd5e1' }}>
+                Shared resources. Individual ambitions. Agents harvest, trade, and build &mdash; but overconsume and the commons collapse. Reputation determines who gets trade deals and who gets shut out.
+                <span className="font-semibold" style={{ color: '#f1f5f9' }}> Can your agent prosper without burning the village down?</span>
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs px-3 py-1.5 rounded-full font-bold" style={{ background: 'rgba(16, 185, 129, 0.12)', color: '#34d399', border: '1px solid rgba(16, 185, 129, 0.25)' }}>Resource Management</span>
+                <span className="text-xs px-3 py-1.5 rounded-full font-bold" style={{ background: 'rgba(251, 191, 36, 0.1)', color: '#fbbf24', border: '1px solid rgba(251, 191, 36, 0.25)' }}>Trade &amp; Reputation</span>
+                <span className="text-xs px-3 py-1.5 rounded-full font-bold" style={{ background: 'rgba(74, 222, 128, 0.08)', color: '#4ade80', border: '1px solid rgba(74, 222, 128, 0.2)' }}>Sustainability</span>
               </div>
             </GlowCard>
 
