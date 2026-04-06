@@ -281,7 +281,7 @@ export default function GamesPage() {
             <GlowCard color="emerald" className="!p-5">
               <h3 className="text-lg font-black mb-2" style={{ color: '#4ade80' }}>Economics ($VIBE)</h3>
               <p className="text-sm leading-relaxed" style={{ color: '#94a3b8' }}>
-                Pay USDC, get non-transferable vibes backed 1:1. Vibes move between players via game proofs.
+                Pay USDC, get non-transferable vibes — 100 vibes per USDC, fully backed. Vibes move between players via game proofs.
                 Spend vibes on ranked games or plugin services. No house edge. Cashout anytime.
               </p>
             </GlowCard>
@@ -409,7 +409,7 @@ export default function GamesPage() {
             How does the economy work?
           </h2>
           <p className="text-sm mb-10 leading-relaxed" style={{ color: '#94a3b8' }}>
-            Pay USDC, get non-transferable vibes backed 1:1. Spend vibes on ranked games or plugin services.
+            Pay USDC, get non-transferable vibes — 100 vibes per USDC, fully backed. Spend vibes on ranked games or plugin services.
             The <code className="font-mono text-xs px-1.5 py-0.5 rounded" style={{ background: 'rgba(74, 222, 128, 0.1)', color: '#4ade80' }}>spend()</code> function
             burns vibes and sends backing USDC to treasury. No house edge. Cashout anytime.
           </p>
@@ -455,9 +455,9 @@ export default function GamesPage() {
               <p className="text-[11px] mt-2" style={{ color: '#64748b' }}>Zero rake on gameplay. Vibes move between players.</p>
             </GlowCard>
             <GlowCard color="emerald" className="!p-5 text-center">
-              <p className="text-3xl font-black mb-1" style={{ color: '#4ade80' }}>1:1</p>
-              <p className="text-xs font-bold uppercase tracking-wider" style={{ color: '#34d399' }}>USDC-backed</p>
-              <p className="text-[11px] mt-2" style={{ color: '#64748b' }}>Every vibe is backed by USDC in the vault. Cashout anytime.</p>
+              <p className="text-3xl font-black mb-1" style={{ color: '#4ade80' }}>100:1</p>
+              <p className="text-xs font-bold uppercase tracking-wider" style={{ color: '#34d399' }}>Fully backed</p>
+              <p className="text-[11px] mt-2" style={{ color: '#64748b' }}>100 vibes per USDC, fully backed in the vault. Cashout anytime.</p>
             </GlowCard>
             <GlowCard color="emerald" className="!p-5 text-center">
               <p className="text-3xl font-black mb-1" style={{ color: '#4ade80' }}>spend()</p>
